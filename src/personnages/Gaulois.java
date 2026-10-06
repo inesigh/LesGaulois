@@ -26,5 +26,12 @@ public class Gaulois {
 		System.out.println(asterix);
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + "]";
+	}
+	
+	
 	
 }
