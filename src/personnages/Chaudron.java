@@ -14,8 +14,12 @@ public class Chaudron {
 	}
 	
 	public int prendreLouche() {
-		
-		return 0;
+		int force = forcePotion;
+		quantitePotion--;
+		if (quantitePotion <= 0) {
+			forcePotion = 0;
+		}
+		return force;
 	}
 
 }
