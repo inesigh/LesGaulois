@@ -3,6 +3,7 @@ package personnages;
 public class Gaulois {
 	private String nom;
 	private int force;
+	private int effetPotion = 1;
 	
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
@@ -31,14 +32,15 @@ public class Gaulois {
 		System.out.println(asterix);
 		
 	}
-	
-	
 
 	@Override
 	public String toString() {
 		return nom;
 	}
 	
+	public void boirePotion(int forcePotion) {
+		
+	}
 	
 	
 }
