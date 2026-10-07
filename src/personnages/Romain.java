@@ -27,7 +27,7 @@ public class Romain {
 	        parler("Aïe");
 	    } else {
 	        force = 0;
-	        parler("J'abandonne");
+	        parler("J'abandonne !");
 	    }
 	}
 	
