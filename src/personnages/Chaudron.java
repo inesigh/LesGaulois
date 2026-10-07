@@ -9,8 +9,7 @@ public class Chaudron {
 	}
 	
 	public boolean resterPotion(){
-		
-		return false;
+		return quantitePotion > 0;
 	}
 	
 	public int prendreLouche() {

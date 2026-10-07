@@ -14,7 +14,7 @@ public class Druide {
 	}
 	
 	public String prendreParole() {
-		return "Le druide " + nom + " : ";
+		return "Le Druide " + nom + " : ";
 	}
 	
 	public void parler(String texte) {
