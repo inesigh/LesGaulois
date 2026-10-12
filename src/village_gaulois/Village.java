@@ -39,6 +39,13 @@ public class Village {
 		}
 		return villageois[numVillageois - 1];
 	}
+	
+	public void afficherVillageois() {
+		System.out.println("Dans le village \"" + nom + "\" du chef " + chef.getNom() + " vivent les légendaires gaulois :");
+		for (int i = 0; i < nbVillageois; i++) {
+			System.out.println("- " + villageois[i].getNom());
+		}
+	}
 
 	public static void main(String[] args) {
 		Gaulois abraracourcix = new Gaulois("Abraracourcix", 6);
