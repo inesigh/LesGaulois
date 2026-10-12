@@ -21,8 +21,18 @@ public class Gaulois {
 		this.village = village;
 	}
 	
+	public void sePresenter() {
+	    if (village == null) {
+	        parler("Bonjour, je m'appelle " + nom + ". Je voyage de villages en villages.");
+	    } else if (village.getChef() == this) {
+	        parler("Bonjour, je m'appelle " + nom + ". Je suis le chef le village : " + village.getNom() + ".");
+	    } else {
+	        parler("Bonjour, je m'appelle " + nom + ". J'habite le village : " + village.getNom() + ".");
+	    }
+	}
+	
 	public void parler(String texte) {
-		System.out.println(prendreParole () + "\"" + texte + "\"");
+		 System.out.println("Le Gaulois " + nom + " : \"" + texte + "\"");
 	}
 	
 	public void frapper(Romain romain) {
