@@ -25,7 +25,12 @@ public class Village {
 	public Gaulois getChef() {
 		return chef;
 	}
-
+	
+	public void ajouterVillageois(Gaulois gaulois) {
+		villageois[nbVillageois] = gaulois;
+		nbVillageois++;
+		gaulois.setVillage(this);
+	}
 
 	public static void main(String[] args) {
 		
