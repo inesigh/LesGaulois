@@ -31,6 +31,14 @@ public class Village {
 		nbVillageois++;
 		gaulois.setVillage(this);
 	}
+	
+	public Gaulois trouverVillageois(int numVillageois) {
+		if (numVillageois < 1 || numVillageois > nbVillageois) {
+			System.out.println("Il n'y a pas autant d'habitants dans notre village !");
+			return null;
+		}
+		return villageois[numVillageois - 1];
+	}
 
 	public static void main(String[] args) {
 		
