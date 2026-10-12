@@ -27,7 +27,6 @@ public class Village {
 	}
 
 
-
 	public static void main(String[] args) {
 		
 
